@@ -1,323 +1,147 @@
-
-<!-- saved from url=(0014)about:internet -->
-<html><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>Man-Chung Yue's Homepage</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <style>
+  /* Technical Suggestion 3: Moving all <font> styles to CSS */
+  body {
+    margin-top: 39px; 
+    color: rgb(0, 0, 0); 
+    background-color: HONEYDEW; 
+    margin-left: 43px; 
+    margin-right: 43px;
+    font-family: arial, sans-serif;
+    font-size: 14px; /* Restoring the classic academic scale */
+  }
+
+  /* Corrected Link Colors: Using the "dimmer" blue (#337ab7) from your original environment */
+  a:link, a:visited { 
+    color: #337ab7; 
+    text-decoration: none; 
+  }
+  
+  /* Feature restoration: Color change and underline on hover */
+  a:hover, a:active { 
+    color: #23527c; /* Darker blue on hover */
+    text-decoration: underline !important; 
+  }
+
   .name {font-size:50px; color: rgb(0, 80, 0); font-weight: bold; font-family: arial;}
-  .profile {color: rgb(0, 80, 0);font-family: arial; font-weight: bold; font-size: 16px; line-height: normal; padding-top: 10px;}
-  @media (min-width: 768px) 
- {
-    .profile {font-size: 12px; }
- }
-  @media (min-width: 992px) 
- {
-    .profile {font-size: 14px;}
- }
-  @media (min-width: 1200px) 
- {
-    .profile {font-size: 16px;}
- }
+  
+  .profile {color: rgb(0, 80, 0); font-family: arial; font-weight: bold; font-size: 16px; line-height: normal; padding-top: 10px;}
+  
+  /* Original media queries for profile text responsiveness */
+  @media (min-width: 768px) { .profile {font-size: 12px; } }
+  @media (min-width: 992px) { .profile {font-size: 14px;} }
+  @media (min-width: 1200px) { .profile {font-size: 16px;} }
+
+  .section-title { color: rgb(153, 51, 0); font-family: arial; }
+  .about-text { font-family: arial; }
+  .pub-list { font-family: arial; }
+  .pub-list li { margin-bottom: 10px; }
 </style>
 </head>
 
-<body style="margin-top: 39px;  color: rgb(0, 0, 0); background-color: HONEYDEW; margin-left: 43px; margin-right: 43px;" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<body>
 
 <div class="container">
-<div class="col-sm-12" style="padding: 0px">
-<h1 class="name">Man-Chung Yue</h1>
+  <div class="row">
+    <div class="col-12" style="padding: 0px">
+      <h1 class="name">Man-Chung Yue</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-sm-4 col-md-3">
+      <img src="./mc_photo.jpg" class="img-fluid" alt="Man-Chung Yue" style="margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="col-12 col-sm-8 col-md-9 profile">
+      Associate Professor<br>
+      Department of Applied Mathematics<br>
+      The Hong Kong Polytechnic University<br>
+      <br>
+      Office: TU 829<br>
+      Email: manchung.yue [at] polyu [dot] edu [dot] hk<br><br>
+      <a href="https://scholar.google.com/citations?user=8sf7gu8AAAAJ&amp;hl=en" target="_blank">
+        <img src="./google_scholar.png" height="30px" alt="Google Scholar Profile">
+      </a>
+    </div>
+
+    <div class="col-12 text-end" style="padding-top: 20px">
+      <i><q>Mathematics, rightly viewed, possesses not only truth, but supreme beauty.</q><br>
+      Bertrand Russell</i>
+    </div>
+  </div>
+
+  <br><br>
+
+  <h1 class="section-title">About Me</h1>
+  <div class="about-text">
+    I am an Associate Professor in the Department of Applied Mathematics at The Hong Kong Polytechnic University. 
+    I previously worked as an Assistant Professor in the Department of Data and Systems Engineering at The University of Hong Kong and as a Research Associate in the group of <a href="https://www.doc.ic.ac.uk/~wwiesema/">Wolfram Wiesemann</a> at Imperial College London.
+    I received my Ph.D. in Systems Engineering and Engineering Management under the supervision of <a href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</a>, and my B.Sc. in Mathematics, both from The Chinese University of Hong Kong.<br><br>
+
+    My research focuses on continuous optimization and its interplay with machine learning, operations research, data science, and signal processing.
+    <br><br>
+  </div>
+
+  <h1 class="section-title">Publications</h1>
+
+  <h3 class="section-title">Preprints</h3>
+  <ol class="pub-list">
+    <li>Zhichun Yang, Li Jiang, Tianxiang Liu, Man-Chung Yue. <a href="https://manchungyue.com/EBRA.pdf"><i>An error bound-based convergence analysis framework for a class of randomized algorithms</i></a>. 2026.</li>
+    <li>Wenqing Ouyang, Ting Kei Pong, Man-Chung Yue. <a href="https://manchungyue.com/BM_factor.pdf"><i>Burer-Monteiro factorizability of nuclear norm regularized optimization</i></a>. 2025.</li>
+    <li>Andy Yat-Ming Cheung, Jinxin Wang, Man-Chung Yue, Anthony Man-Cho So. <a href="https://manchungyue.com/RSSM.pdf"><i>Randomized submanifold subgradient method for optimization over Stiefel manifolds</i></a>. 2024.</li>
+    <li>Kai Tu, Zhi Chen, Man-Chung Yue. <a href="https://manchungyue.com/max_min_max.pdf"><i>A max-min-max algorithm for large-scale robust optimization</i></a>. 2024.</li>
+  </ol>
+
+  <h3 class="section-title">Journal Articles</h3>
+  <ol class="pub-list">
+    <li>Huikang Liu, Wolfram Wiesemann, Man-Chung Yue. <a href="https://manchungyue.com/FMDP.pdf"><i>An MILP-based solution scheme for factored Markov decision processes</i></a>. Accepted for publication in Operations Research, 2026.</li>
+    <li>Man-Chung Yue, Yves Rychener, Daniel Kuhn, Viet Anh Nguyen. <a href="https://manchungyue.com/geometric_covariance_shrinkage.pdf"><i>A geometric unification of distributionally robust covariance estimators: Shrinking the spectrum by inflating the ambiguity set</i></a>. Operations Research (2026) 74(3):1710-1728.</li>
+    <li>Man-Chung Yue. <a href="https://manchungyue.com/rearrange.pdf"><i>A matrix generalization of the Hardy-Littlewood-Pólya rearrangement inequality and its applications</i></a>. Journal of Optimization Theory and Applications (2026) 208(2):Article 64.</li>
+    <li>Hiroki Naganuma, Xinzhi Zhang, Man-Chung Yue, Ioannis Mitliagkas, Philipp Witte, Russell Hewett, Yin Tat Lee. <a href="https://manchungyue.com/PALSGD.pdf"><i>Pseudo-asynchronous local SGD: Robust and efficient data-parallel training</i></a>. Transactions on Machine Learning Research (2025).</li>
+    <li>Ming Lei, Ting Kei Pong, Shuqin Sun, Man-Chung Yue. <a href="https://manchungyue.com/DGS.pdf"><i>Subdifferentially polynomially bounded functions and Gaussian smoothing-based zeroth-order optimization</i></a>. SIAM Journal on Optimization (2025) 35(2):1393-1418.</li>
+    <li>Ngoc Bui, Duy Nguyen, Man-Chung Yue, Viet Anh Nguyen. <a href="https://manchungyue.com/cva_recourse.pdf"><i>Coverage-validity-aware algorithmic recourse</i></a>. Operations Research (2025) 73(6):3294-3310.</li>
+    <li>Zhichun Yang, Fu-quan Xia, Kai Tu, Man-Chung Yue. <a href="https://manchungyue.com/VR3PM.pdf"><i>Variance reduced random relaxed projection method for constrained finite-sum minimization problems</i></a>. IEEE Transactions on Signal Processing (2024) 72:2188-2203.</li>
+    <li>Wouter Jongeneel, Man-Chung Yue, Daniel Kuhn. <a href="https://manchungyue.com/Imaginary_Zeroth_Order_Convex_Optimization.pdf"><i>Small errors in random zeroth-order optimization are imaginary</i></a>. SIAM Journal on Optimization (2024) 34(3):2638-2670.</li>
+    <li>Manru Zong, Yin Tat Lee, Man-Chung Yue. <a href="https://manchungyue.com/short_step.pdf"><i>Short-step methods are not strongly polynomial-time</i></a>. Mathematical Programming (2024) 207(1-2):733-746.</li>
+    <li>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So. <a href="https://manchungyue.com/orthogonal_subgroup_synchronization.pdf"><i>A unified approach to synchronization problems over subgroups of the orthogonal group</i></a>. Applied and Computational Harmonic Analysis (2023) 66:320-372.</li>
+    <li>Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. <a href="https://manchungyue.com/wasserstein.pdf"><i>On linear optimization over Wasserstein balls</i></a>. Mathematical Programming (2022) 195(1-2):1107-1122.</li>
+    <li>Rujun Jiang, Man-Chung Yue, Zhishuo Zhou. <a href="https://manchungyue.com/cubic.pdf"><i>An accelerated first-order method with complexity analysis for solving cubic regularization subproblems</i></a>. Computational Optimization and Applications (2021) 79(2):471-506.</li>
+    <li>Yin Tat Lee, Man-Chung Yue. <a href="https://manchungyue.com/nSC.pdf"><i>Universal barrier is n-self-concordant</i></a>. Mathematics of Operations Research (2021) 46(3):1129-1148.</li>
+    <li>Man-Chung Yue, Zirui Zhou, Anthony Man-Cho So. <a href="https://manchungyue.com/CR.pdf"><i>On the quadratic convergence of the cubic regularization method under a local error bound condition</i></a>. SIAM Journal on Optimization (2019) 29(1):904-932.</li>
+    <li>Man-Chung Yue, Zirui Zhou, Anthony Man-Cho So. <a href="https://manchungyue.com/IRPN.pdf"><i>A family of inexact SQA methods for non-smooth convex minimization with provable convergence guarantees based on the Luo-Tseng error bound property</i></a>. Mathematical Programming (2019) 174(1-2):327-358.</li>
+    <li>Sherry Xue-Ying Ni, Man-Chung Yue, Kam-Fung Cheung, Anthony Man-Cho So. <a href="https://manchungyue.com/SNL_PR.pdf"><i>Phase retrieval via sensor network localization</i></a>. Journal of the Operations Research Society of China (2019) 7(1):127-146.</li>
+    <li>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So. <a href="https://manchungyue.com/GPM_phase.pdf"><i>On the estimation performance and convergence rate of the generalized power method for phase synchronization</i></a>. SIAM Journal on Optimization (2017) 27(4):2426-2446.</li>
+    <li>Man-Chung Yue, Sissi Xiaoxiao Wu, Anthony Man-Cho So. <a href="https://manchungyue.com/phase_uncertainty.pdf"><i>A robust design for MISO physical-layer multicasting over line-of-sight channels</i></a>. IEEE Signal Processing Letters (2016) 23(7):939-943.</li>
+    <li>Man-Chung Yue, Anthony Man-Cho So. <a href="https://manchungyue.com/schatten_ineq-ACHA.pdf"><i>A perturbation inequality for concave functions of singular values and its applications in low-rank matrix recovery</i></a>. Applied and Computational Harmonic Analysis (2016) 40(2):396-416.</li>
+  </ol>
+
+  <h3 class="section-title">Conference Proceedings</h3>
+  <ol class="pub-list">
+    <li>Ziyue Zhao, Huikang Liu, Man-Chung Yue. <a href="https://manchungyue.com/ASE_SE(d)_Sync.pdf"><i>Anchored spectral estimator for rigid motion synchronization</i></a>. Proceedings of the 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026), 2026.</li>
+    <li>Dongxuan Zhu, Ly Tran Ho Khanh, Andy Yat-Ming Cheung, Man-Chung Yue, Viet Anh Nguyen. <a href="https://manchungyue.com/stiefel_steering.pdf"><i>Exploring diverse generation paths via inference-time Stiefel activation steering</i></a>. Proceedings of the 14th International Conference on Learning Representations (ICLR 2026), 2026.</li>
+    <li>Ly Tran Ho Khanh, Dongxuan Zhu, Man-Chung Yue, Viet Anh Nguyen. <a href="https://manchungyue.com/RAS.pdf"><i>Test-time diverse reasoning by Riemannian activation steering</i></a>. Proceedings of the AAAI Conference on Artificial Intelligence, 39 (AAAI 2026), 2026.</li>
+    <li>Yihang Gao, Man-Chung Yue, Michael Kwok-Po Ng. <a href="https://manchungyue.com/ASE.pdf"><i>Approximate secular equations for the cubic regularization subproblem</i></a>. Proceedings of Advances in Neural Information Processing Systems 36 (NeurIPS 2022), 2022.</li>
+    <li>Tuan-Duy H. Nguyen, Ngoc Bui, Duy Nguyen, Man-Chung Yue, Viet Anh Nguyen. <a href="https://manchungyue.com/Robust_Bayesian_Recourse.pdf"><i>Robust Bayesian recourse</i></a>. Proceedings of the 38th Conference on Uncertainty in Artificial Intelligence (UAI 2022), 2022.</li>
+    <li>Hieu Vu, Toan Tran, Man-Chung Yue, Viet Anh Nguyen. <a href="https://manchungyue.com/DRFPCA.pdf"><i>Distributionally robust fair principal components via geodesic descents</i></a>. Proceedings of the 10th International Conference on Learning Representations (ICLR 2022), 2022.</li>
+    <li>Bahar Taskesen, Man-Chung Yue, José Blanchet, Daniel Kuhn, Viet Anh Nguyen. <a href="https://manchungyue.com/SDA_DRO.pdf"><i>Sequential domain adaptation by synthesizing distributionally robust experts</i></a>. Proceedings of the 38th International Conference on Machine Learning (ICML 2021), pp. 10162-10172, 2021.</li>
+    <li>Ho-Cheung Ng, Shuanglong Liu, Izaak Coleman, Ringo Sai Wo Chu, Man-Chung Yue, Wayne Luk. <a href="https://manchungyue.com/explore_dna.pdf"><i>Acceleration of short read alignment with runtime reconfiguration</i></a>. Proceedings of the 2020 International Conference on Field-Programmable Technology (ICFPT 2020), pp. 256-262, 2020.</li>
+    <li>Zengde Deng, Man-Chung Yue, Anthony Man-Cho So. <a href="https://manchungyue.com/con_lasso-icassp_20.pdf"><i>An efficient augmented Lagrangian-based method for linear equality-constrained Lasso</i></a>. Proceedings of the 2020 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2020), pp. 5760-5764, 2020.</li>
+    <li>Viet Anh Nguyen, Soroosh Shafieezadeh-Abadeh, Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. <a href="https://manchungyue.com/elbo.pdf"><i>Optimistic distributionally robust optimization for nonparametric likelihood approximation</i></a>. Proceedings of Advances in Neural Information Processing Systems 33 (NeurIPS 2019), pp. 15872-15882, 2019.</li>
+    <li>Viet Anh Nguyen, Soroosh Shafieezadeh-Abadeh, Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. <a href="https://manchungyue.com/QDA.pdf"><i>Calculating optimistic likelihoods using (geodesically) convex optimization</i></a>. Proceedings of Advances in Neural Information Processing Systems 33 (NeurIPS 2019), pp. 13942-13953, 2019.</li>
+    <li>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So, Wing-Kin Ma. <a href="https://manchungyue.com/mimo_gpm-spawc17.pdf"><i>A discrete first-order method for large-scale MIMO detection with provable guarantees</i></a>. Proceedings of the 18th IEEE Workshop on Signal Processing Advances in Wireless Communications (SPAWC 2017), pp. 669-673, 2017.</li>
+    <li>Sissi Xiaoxiao Wu, Man-Chung Yue, Wing-Kin Ma, Anthony Man-Cho So. <a href="https://manchungyue.com/robustsdr_icassp_2017.pdf"><i>SDR approximation bounds for the robust multicast beamforming problem with interference temperature constraints</i></a>. Proceedings of the 2017 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2017), pp. 4054-4058, 2017.</li>
+  </ol>
 </div>
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<img src="./mc_photo.jpg" class="img-responsive" style="margin-left: auto;  margin-right: auto;  ">
-</div>
-<div class="col-xs-12 col-sm-8 col-md-9 profile">
-Associate Professor<br>
-Department of Applied Mathematics<br>
-The Hong Kong Polytechnic University<br>
 
-<br>
-Office: TU 829<br>
-Email: manchung.yue [at] polyu [dot] edu [dot] hk<br><br>
-<a href="https://scholar.google.com/citations?user=8sf7gu8AAAAJ&amp;hl=en" target="_blank"><img src="./google_scholar.png" height="30px"></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-</div>
-
-<div align="right" class="col-xs-12" style="padding-top: 20px">
-  <i><q>Mathematics, rightly viewed, possesses not only truth, but supreme beauty.</q><br>
-  Bertrand Russell</i>
-</div>
-</div>
-<font>
-
-<br><br>
-
-
-<h1 style="font-family: arial;"><span style="color: rgb(153, 51, 0);">About Me</span></h1>
-<font style="font-family: arial;">I am an Associate Professor in the Department of Applied Mathematics at The Hong Kong Polytechnic University. 
-I previously worked as an Assistant Professor in the Department of Data and Systems Engineering at The University of Hong Kong and as a Research Associate in the group of <a href="https://www.doc.ic.ac.uk/~wwiesema/">Wolfram Wiesemann</a> at Imperial College London.
-I received my Ph.D. in Systems Engineering and Engineering Management under the supervision of <a href="http://www1.se.cuhk.edu.hk/~manchoso/">Anthony Man-Cho So</a>, and my B.Sc. in Mathematics, both from The Chinese University of Hong Kong.<br><br>
-
-My research focuses on continuous optimization and its interplay with machine learning, operations research, data science, and signal processing.
-<br><br>
-
-
-
-<h1 style="color: rgb(153, 51, 0); font-family: arial;">Publications</h1>
-
-<h3 style="color: rgb(153, 51, 0); font-family: arial;">Preprints</h3>
-
-<ol style="font-family: arial;">
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Zhichun Yang, Li Jiang, Tianxiang Liu, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/EBRA.pdf"><i>An error bound-based convergence analysis framework for a class of randomized algorithms</i></a>. </font>
-<font>2026.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Wenqing Ouyang, Ting Kei Pong, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/BM_factor.pdf"><i>Burer-Monteiro factorizability of nuclear norm regularized optimization</i></a>. </font>
-<font>2025.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Andy Yat-Ming Cheung, Jinxin Wang, Man-Chung Yue, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/RSSM.pdf"><i>Randomized submanifold subgradient method for optimization over Stiefel manifolds</i></a>. </font>
-<font>2024.</font>
-</li>
-
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Kai Tu, Zhi Chen, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/max_min_max.pdf"><i>A max-min-max algorithm for large-scale robust optimization</i></a>. </font>
-<font>2024.</font>
-</li>
-
-
-
-</ol>
-
-<h3 style="color: rgb(153, 51, 0); font-family: arial;">Journal Articles</h3>
-
-<ol style="font-family: arial;">
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Huikang Liu, Wolfram Wiesemann, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/FMDP.pdf"><i>An MILP-based solution scheme for factored Markov decision processes</i></a>. </font>
-<font>Accepted for publication in Operations Research, 2026.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Yves Rychener, Daniel Kuhn, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/geometric_covariance_shrinkage.pdf"><i>A geometric unification of distributionally robust covariance estimators: Shrinking the spectrum by inflating the ambiguity set</i></a>. </font>
-<font>Operations Research (2026) 74(3):1710-1728.</font>
-</li>
-
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/rearrange.pdf"><i>A matrix generalization of the Hardy-Littlewood-Pólya rearrangement inequality and its applications</i></a>. </font>
-<font>Journal of Optimization Theory and Applications (2026) 208(2):Article 64.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Hiroki Naganuma, Xinzhi Zhang, Man-Chung Yue, Ioannis Mitliagkas, Philipp Witte,  Russell Hewett, Yin Tat Lee. </font>
-<font><a href="https://manchungyue.com/PALSGD.pdf"><i>Pseudo-asynchronous local SGD: Robust and efficient data-parallel training</i></a>. </font>
-<font>Transactions on Machine Learning Research (2025).</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Ming Lei, Ting Kei Pong, Shuqin Sun, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/DGS.pdf"><i>Subdifferentially polynomially bounded functions and Gaussian smoothing-based zeroth-order optimization</i></a>. </font>
-<font>SIAM Journal on Optimization (2025) 35(2):1393-1418.</font>
-</li>
-
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Ngoc Bui, Duy Nguyen, Man-Chung Yue, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/cva_recourse.pdf"><i>Coverage-validity-aware algorithmic recourse</i></a>. </font>
-<font>Operations Research (2025) 73(6):3294-3310.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Zhichun Yang, Fu-quan Xia, Kai Tu, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/VR3PM.pdf"><i>Variance reduced random relaxed projection method for constrained finite-sum minimization problems</i></a>. </font>
-<font>IEEE Transactions on Signal Processing (2024) 72:2188-2203.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Wouter Jongeneel, Man-Chung Yue, Daniel Kuhn. </font>
-<font><a href="https://manchungyue.com/Imaginary_Zeroth_Order_Convex_Optimization.pdf"><i>Small errors in random zeroth-order optimization are imaginary</i></a>. </font>
-<font>SIAM Journal on Optimization (2024) 34(3):2638-2670.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Manru Zong, Yin Tat Lee, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/short_step.pdf"><i>Short-step methods are not strongly polynomial-time</i></a>. </font>
-<font>Mathematical Programming (2024) 207(1-2):733-746.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/orthogonal_subgroup_synchronization.pdf"><i>A unified approach to synchronization problems over subgroups of the orthogonal group</i></a>. </font>
-<font>Applied and Computational Harmonic Analysis (2023) 66:320-372.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. </font>
-<font><a href="https://manchungyue.com/wasserstein.pdf"><i>On linear optimization over Wasserstein balls</i></a>. </font>
-<font>Mathematical Programming (2022) 195(1-2):1107-1122.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Rujun Jiang, Man-Chung Yue, Zhishuo Zhou. </font>
-<font><a href="https://manchungyue.com/cubic.pdf"><i>An accelerated first-order method with complexity analysis for solving cubic regularization subproblems</i></a>. </font>
-<font>Computational Optimization and Applications (2021) 79(2):471-506.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Yin Tat Lee, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/nSC.pdf"><i>Universal barrier is n-self-concordant</i></a>. </font>
-<font>Mathematics of Operations Research (2021) 46(3):1129-1148.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Zirui Zhou, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/CR.pdf"><i>On the quadratic convergence of the cubic regularization method under a local error bound condition</i></a>. </font>
-<font>SIAM Journal on Optimization (2019) 29(1):904-932.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Zirui Zhou, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/IRPN.pdf"><i>A family of inexact SQA methods for non-smooth convex minimization with provable convergence guarantees based on the Luo-Tseng error bound property</i></a>. </font>
-<font>Mathematical Programming (2019) 174(1-2):327-358.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Sherry Xue-Ying Ni, Man-Chung Yue, Kam-Fung Cheung, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/SNL_PR.pdf"><i>Phase retrieval via sensor network localization</i></a>. </font>
-<font>Journal of the Operations Research Society of China (2019) 7(1):127-146.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/GPM_phase.pdf"><i>On the estimation performance and convergence rate of the generalized power method for phase synchronization</i></a>. </font>
-<font>SIAM Journal on Optimization (2017) 27(4):2426-2446.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Sissi Xiaoxiao Wu, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/phase_uncertainty.pdf"><i>A robust design for MISO physical-layer multicasting over line-of-sight channels</i></a>. </font>
-<font>IEEE Signal Processing Letters (2016) 23(7):939-943.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Man-Chung Yue, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/schatten_ineq-ACHA.pdf"><i>A perturbation inequality for concave functions of singular values and its applications in low-rank matrix recovery</i></a>. </font>
-<font>Applied and Computational Harmonic Analysis (2016) 40(2):396-416.</font>
-</li>
-
-</ol>
-
-<h3 style="color: rgb(153, 51, 0); font-family: arial;">Conference Proceedings</h3>
-
-<ol style="font-family: arial;">
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Ziyue Zhao, Huikang Liu, Man-Chung Yue. </font>
-<font><a href="https://manchungyue.com/ASE_SE(d)_Sync.pdf"><i>Anchored spectral estimator for rigid motion synchronization</i></a>. </font>
-<font>Proceedings of the 2026 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026), 2026.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Dongxuan Zhu, Ly Tran Ho Khanh, Andy Yat-Ming Cheung, Man-Chung Yue, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/stiefel_steering.pdf"><i>Exploring diverse generation paths via inference-time Stiefel activation steering</i></a>. </font>
-<font>Proceedings of the 14th International Conference on Learning Representations (ICLR 2026), 2026.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Ly Tran Ho Khanh, Dongxuan Zhu, Man-Chung Yue, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/RAS.pdf"><i>Test-time diverse reasoning by Riemannian activation steering</i></a>. </font>
-<font>Proceedings of the AAAI Conference on Artificial Intelligence, 39 (AAAI 2026), 2026.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Yihang Gao, Man-Chung Yue, Michael Kwok-Po Ng. </font>
-<font><a href="https://manchungyue.com/ASE.pdf"><i>Approximate secular equations for the cubic regularization subproblem</i></a>. </font>
-<font>Proceedings of Advances in Neural Information Processing Systems 36 (NeurIPS 2022), 2022.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Tuan-Duy H. Nguyen, Ngoc Bui, Duy Nguyen, Man-Chung Yue, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/Robust_Bayesian_Recourse.pdf"><i>Robust Bayesian recourse</i></a>. </font>
-<font>Proceedings of the 38th Conference on Uncertainty in Artificial Intelligence (UAI 2022), 2022.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Hieu Vu, Toan Tran, Man-Chung Yue, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/DRFPCA.pdf"><i>Distributionally robust fair principal components via geodesic descents</i></a>. </font>
-<font>Proceedings of the 10th International Conference on Learning Representations (ICLR 2022), 2022.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Bahar Taskesen, Man-Chung Yue, José Blanchet, Daniel Kuhn, Viet Anh Nguyen. </font>
-<font><a href="https://manchungyue.com/SDA_DRO.pdf"><i>Sequential domain adaptation by synthesizing distributionally robust experts</i></a>. </font>
-<font>Proceedings of the 38th International Conference on Machine Learning (ICML 2021), pp. 10162-10172, 2021.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Ho-Cheung Ng, Shuanglong Liu, Izaak Coleman, Ringo Sai Wo Chu, Man-Chung Yue, Wayne Luk. </font>
-<font><a href="https://manchungyue.com/explore_dna.pdf"><i>Acceleration of short read alignment with runtime reconfiguration</i></a>. </font>
-<font>Proceedings of the 2020 International Conference on Field-Programmable Technology (ICFPT 2020), pp. 256-262, 2020.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Zengde Deng, Man-Chung Yue, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/con_lasso-icassp_20.pdf"><i>An efficient augmented Lagrangian-based method for linear equality-constrained Lasso</i></a>. </font>
-<font>Proceedings of the 2020 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2020), pp. 5760-5764, 2020.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Viet Anh Nguyen, Soroosh Shafieezadeh-Abadeh, Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. </font>
-<font><a href="https://manchungyue.com/elbo.pdf"><i>Optimistic distributionally robust optimization for nonparametric likelihood approximation</i></a>. </font>
-<font>Proceedings of Advances in Neural Information Processing Systems 33 (NeurIPS 2019), pp. 15872-15882, 2019.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Viet Anh Nguyen, Soroosh Shafieezadeh-Abadeh, Man-Chung Yue, Daniel Kuhn, Wolfram Wiesemann. </font>
-<font><a href="https://manchungyue.com/QDA.pdf"><i>Calculating optimistic likelihoods using (geodesically) convex optimization</i></a>. </font>
-<font>Proceedings of Advances in Neural Information Processing Systems 33 (NeurIPS 2019), pp. 13942-13953, 2019.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Huikang Liu, Man-Chung Yue, Anthony Man-Cho So, Wing-Kin Ma. </font>
-<font><a href="https://manchungyue.com/mimo_gpm-spawc17.pdf"><i>A discrete first-order method for large-scale MIMO detection with provable guarantees</i></a>. </font>
-<font>Proceedings of the 18th IEEE Workshop on Signal Processing Advances in Wireless Communications (SPAWC 2017), pp. 669-673, 2017.</font>
-</li>
-
-<li style="font-family: arial; margin-bottom: 10px">
-<font>Sissi Xiaoxiao Wu, Man-Chung Yue, Wing-Kin Ma, Anthony Man-Cho So. </font>
-<font><a href="https://manchungyue.com/robustsdr_icassp_2017.pdf"><i>SDR approximation bounds for the robust multicast beamforming problem with interference temperature constraints</i></a>. </font>
-<font>Proceedings of the 2017 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2017), pp. 4054-4058, 2017.</font>
-</li>
-
-</ol>
-
-
-<br><br>
-
-</font>
-
-
-
-
-
-</font>
-
-</div>
-</body></html>
+</body>
+</html>
