@@ -8,26 +8,34 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-  /* Technical Suggestion 3: Moving all <font> styles to CSS */
+  /* Technical Suggestion 3: Moving <font> styles to CSS */
   body {
     margin-top: 39px; 
     color: rgb(0, 0, 0); 
     background-color: HONEYDEW; 
+    font-family: arial, sans-serif;
+    font-size: 14px; 
+    /* Responsive Margins: 43px on desktop, 15px on mobile */
     margin-left: 43px; 
     margin-right: 43px;
-    font-family: arial, sans-serif;
-    font-size: 14px; /* Restoring the classic academic scale */
   }
 
-  /* Corrected Link Colors: Using the "dimmer" blue (#337ab7) from your original environment */
+  /* Mobile Adjustment: Reduce side margins on small screens for better readability */
+  @media (max-width: 576px) {
+    body {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+  }
+
   a:link, a:visited { 
     color: #337ab7; 
     text-decoration: none; 
   }
   
-  /* Feature restoration: Color change and underline on hover */
   a:hover, a:active { 
-    color: #23527c; /* Darker blue on hover */
+    color: #23527c; 
     text-decoration: underline !important; 
   }
 
@@ -35,7 +43,6 @@
   
   .profile {color: rgb(0, 80, 0); font-family: arial; font-weight: bold; font-size: 16px; line-height: normal; padding-top: 10px;}
   
-  /* Original media queries for profile text responsiveness */
   @media (min-width: 768px) { .profile {font-size: 12px; } }
   @media (min-width: 992px) { .profile {font-size: 14px;} }
   @media (min-width: 1200px) { .profile {font-size: 16px;} }
